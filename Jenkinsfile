@@ -11,10 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                git url: 'https://github.com/rechandler12/szkolenie-ci-jenkins-example.git', branch: 'main'
-
-                // Run Maven on a Unix agent.
-                sh "mvn clean spring-boot:build-image"
+                git url: 'https://github.com/KarolWolak/szkolenie-ci-jenkins-example.git', branch: 'main'
             }
         }
     }
